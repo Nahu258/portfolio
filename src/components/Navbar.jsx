@@ -1,9 +1,11 @@
 import { Flex, HStack, List, ListItem, Show, Text } from "@chakra-ui/react"
 import DrawerComponent from "./DrawerComponent"
+import SocialIcons from "./SocialIcons"
 
 const NavBar = () => {
   return (
-    <HStack h='80px' justifyContent='space-between' backgroundColor='#0a192f' color='#CBD5E0' padding={3}>
+    <>
+    <HStack h='70px' justifyContent='space-between' backgroundColor='#0a192f' color='#CBD5E0' padding={3}>
       <Text>LOGO</Text>
       <Show above="md">
         <List>
@@ -20,9 +22,12 @@ const NavBar = () => {
       <Show below="md">
         <DrawerComponent/>
       </Show>
-      {/* Social icons */}
-      {/* <Box></Box> */}
     </HStack>
+    {/* Social icons */}
+    <Show above="md">
+      <SocialIcons/>
+    </Show>
+    </>
   )
 }
 
