@@ -24,7 +24,7 @@ const NavBar = () => {
       </Show>
     </HStack>
     {/* Social icons */}
-    <Show above="md">
+    <Show above="lg">
       <SocialIcons/>
     </Show>
     </>
