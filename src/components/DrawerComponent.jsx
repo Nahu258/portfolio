@@ -1,20 +1,13 @@
-import { useState } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerOverlay, List, ListItem, VStack, useDisclosure } from '@chakra-ui/react'
 
 const DrawerComponent = () => {
-  const [size, setSize] = useState('')
   const { isOpen, onOpen, onClose } = useDisclosure()
-
-  const handleClick = (newSize) => {
-    setSize(newSize)
-    onOpen()
-  }
 
   return (
     <Box>
-      <Button onClick={() => handleClick(size)}><FaBars/></Button>
-      <Drawer onClose={onClose} isOpen={isOpen} size={size}>
+      <Button onClick={() => onOpen()}><FaBars/></Button>
+      <Drawer onClose={onClose} isOpen={isOpen} size={'xs'}>
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
