@@ -14,7 +14,7 @@ import Chakra from '../assets/chakra.png';
 
 const Skills = () => {
   return (
-    <Box  name='skills' height='screen' paddingY={9} bg='#0a192f'>
+    <Box name='skills' height={{base: 'screen', sm: 'calc(100vh)'}} bg='#0a192f'>
       <Flex flexDirection='column' marginX='auto' maxWidth='1000px' justifyContent='center' width='full' height='full'>
         <Box paddingX={6}>
           <Text display='inline' fontSize='4xl' fontWeight='bold' borderBottom='2px' borderColor='pink.600'>Skills</Text>

@@ -42,7 +42,7 @@ const Contact = () => {
 
 
   return (
-    <Flex name='contact' w='full' flexDirection='column' height='calc(100vh)' bg='#0a192f' justifyContent='center' alignItems='center'>
+    <Flex name='contact' w='full' flexDirection='column' height={{base: 'screen', sm: 'calc(100vh)'}} bg='#0a192f' justifyContent='center' alignItems='center'>
       <Text marginY='10px' display='inline' fontSize='3xl' fontWeight='bold' borderBottom='2px' borderColor='pink.600'>Contact</Text>
       <Box w={{base: '80%', lg: '50%'}} mx='auto'>
 
