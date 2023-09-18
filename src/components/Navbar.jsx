@@ -26,27 +26,27 @@ const Navbar = () => {
           <List>
             <Flex gap='10' marginRight={8}>
               <ListItem cursor='pointer'>
-                <Link to='home' smooth={true} duration={500}>
+                <Link activeStyle={{fontWeight:'bold', borderBottom: '2px solid #b3317d'}} spy={true} to='home' smooth={true} duration={500}>
                   Home
                 </Link>
               </ListItem>
               <ListItem cursor='pointer'>
-                <Link to='about' smooth={true} duration={500}>
+                <Link activeStyle={{fontWeight:'bold', borderBottom: '2px solid #b3317d'}} spy={true} to='about' smooth={true} duration={500}>
                   About
                 </Link>
               </ListItem>
               <ListItem cursor='pointer'>
-                <Link to='skills' smooth={true} duration={500}>
+                <Link activeStyle={{fontWeight:'bold', borderBottom: '2px solid #b3317d'}} spy={true} to='skills' smooth={true} duration={500}>
                   Skills
                 </Link>
               </ListItem>
               <ListItem cursor='pointer'>
-                <Link to='work' smooth={true} duration={500}>
+                <Link activeStyle={{fontWeight:'bold', borderBottom: '2px solid #b3317d'}} spy={true} to='work' smooth={true} duration={500}>
                   Work
                 </Link>
               </ListItem>
               <ListItem cursor='pointer'>
-                <Link to='contact' smooth={true} duration={500}>
+                <Link activeStyle={{fontWeight:'bold', borderBottom: '2px solid #b3317d'}} spy={true} to='contact' smooth={true} duration={500}>
                   Contact
                 </Link>
               </ListItem>

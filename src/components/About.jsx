@@ -2,11 +2,11 @@ import { Box, Flex, Grid, GridItem, Text } from '@chakra-ui/react'
 
 const About = () => {
   return (
-    <Box name='about' width='full' h='screen' paddingY={9} bg='#0a192f' color='gray.300'>
+    <Box name='about' width='full' height='calc(100vh)' paddingY={9} bg='#0a192f' color='gray.300'>
       <Flex direction='column' justifyContent='center' alignItems='center' width='full' height='full'>
       <Grid maxWidth='1000px' width='full' gridTemplateColumns='1fr 1fr' gap={8}>
         <GridItem textAlign={{ sm: 'right'}} paddingBottom={8} paddingLeft={4}>
-          <Text display='inline' fontSize='4xl' fontWeight='bold' borderBottom='2px' borderColor='pink.600'>About</Text>
+          <Text display='inline' fontSize='4xl' fontWeight='bold' borderBottom='2px' borderColor='pink.600'>About me</Text>
         </GridItem>
         <Box></Box>
       </Grid>
