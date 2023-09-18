@@ -10,6 +10,7 @@ import Aws from '../assets/aws.png';
 import Next from '../assets/next.png';
 import Styled from '../assets/styled.png';
 import Vite from '../assets/vite.png';
+import Chakra from '../assets/chakra.png';
 
 const Skills = () => {
   return (
@@ -19,7 +20,7 @@ const Skills = () => {
           <Text display='inline' fontSize='4xl' fontWeight='bold' borderBottom='2px' borderColor='pink.600'>Skills</Text>
           <Text paddingY={4}>These are the technologies I&apos;ve been using</Text>
         </Box>
-        <Grid width='full' gridTemplateColumns={{base: '1fr 1fr', sm: '1fr 1fr 1fr 1fr'}} textAlign='center' gap={6} paddingY={8}>
+        <Grid width='full' gridTemplateColumns={{base: '1fr 1fr', sm: '1fr 1fr 1fr'}} textAlign='center' gap={6} paddingY={8}>
           <GridItem _hover={{transform: 'scale(1.1)', transitionDuration: '0.5s'}} boxShadow='1px 3px #040c16'>
             <Image marginX='auto' width={20} src={HTML}/>
             <Text>HTML</Text>
@@ -49,12 +50,16 @@ const Skills = () => {
             <p>Styled-components</p>
           </GridItem>
           <GridItem _hover={{transform: 'scale(1.1)', transitionDuration: '0.5s'}} boxShadow='1px 3px #040c16'>
-            <Image marginX='auto' width={20} src={Node}/>
-            <p>Node.js</p>
-          </GridItem>
-          <GridItem _hover={{transform: 'scale(1.1)', transitionDuration: '0.5s'}} boxShadow='1px 3px #040c16'>
             <Image marginX='auto' width={20} src={Tailwind}/>
             <p>Tailwind CSS</p>
+          </GridItem>
+          <GridItem _hover={{transform: 'scale(1.1)', transitionDuration: '0.5s'}} boxShadow='1px 3px #040c16'>
+            <Image marginX='auto' width={20} src={Chakra}/>
+            <p>Chakra-ui</p>
+          </GridItem>
+          <GridItem _hover={{transform: 'scale(1.1)', transitionDuration: '0.5s'}} boxShadow='1px 3px #040c16'>
+            <Image marginX='auto' width={20} src={Node}/>
+            <p>Node.js</p>
           </GridItem>
           <GridItem _hover={{transform: 'scale(1.1)', transitionDuration: '0.5s'}} boxShadow='1px 3px #040c16'>
             <Image marginX='auto' width={20} src={Mongo}/>
