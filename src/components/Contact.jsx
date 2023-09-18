@@ -2,10 +2,11 @@ import { Box, Button, Flex, FormControl, FormLabel, Input, Text, Textarea } from
 import { z } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+import Swal from 'sweetalert2'
 
 const Contact = () => {
   const schema = z.object({
-    name: z.string().min(4, {message: 'Name must be at least 4 characters!'}).max(18),
+    name: z.string().min(4, {message: 'Name must be at least 4 characters!'}).max(30),
     email: z.string().email().min(6).max(60),
     message: z.string().min(15, {message: 'Message needs a minimum of 15 characters!'}).max(200),
   });
@@ -26,12 +27,22 @@ const Contact = () => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(data)
-    }).then(reset())
+    }).then(response => {
+        if (response.ok) {
+          reset()
+        }
+        Swal.fire({
+          icon: response.ok ? 'success' : 'error',
+          title: response.ok ? 'Your message has been sent' : 'Something went wrong!',
+          showConfirmButton: false,
+          timer: 1500
+        })
+    })
   };
 
 
   return (
-    <Flex w='full' flexDirection='column' height='screen' bg='#0a192f' justifyContent='center' alignItems='center'>
+    <Flex name='contact' w='full' flexDirection='column' height='screen' bg='#0a192f' justifyContent='center' alignItems='center'>
       <Text marginY='10px' display='inline' fontSize='3xl' fontWeight='bold' borderBottom='2px' borderColor='pink.600'>Contact</Text>
       <Box w={{base: '80%', lg: '50%'}} mx='auto'>
 
