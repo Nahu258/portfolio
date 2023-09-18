@@ -4,7 +4,7 @@ import { Link } from "react-scroll"
 
 const Home = () => {
   return (
-    <Box name='home' w='full' h='calc(90vh)' bg='#0a192f'>
+    <Box name='home' w='full' h='calc(100vh)' bg='#0a192f'>
       <Flex flexDirection='column' maxWidth='1000px' marginX='auto' paddingX={8} justifyContent='center' h='full'>
         <Text as='p' color='pink.600' fontSize={{ base: '1xl', md: '2xl'}}>Hi, my name is</Text>
         <Text as='h1' fontWeight='bold' fontSize={{ base: '2xl',md: '4xl', lg: '5xl' }} color='#ccd6f6'>Nahuel Villegas</Text>

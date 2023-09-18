@@ -1,45 +1,69 @@
-import { Flex, HStack, List, ListItem, Show, Text } from "@chakra-ui/react"
-import DrawerComponent from "./DrawerComponent"
-import SocialIcons from "./SocialIcons"
-import { Link } from "react-scroll"
+import { HStack, ListItem, List, Text, Show, Flex } from '@chakra-ui/react';
+import DrawerComponent from './DrawerComponent';
+import SocialIcons from './SocialIcons';
+import { Link } from 'react-scroll';
 
-const NavBar = () => {
+const Navbar = () => {
   return (
     <>
-    <HStack h='70px' justifyContent='space-between' backgroundColor='#0a192f' color='#CBD5E0' padding={3}>
-      <Text>LOGO</Text>
-      <Show above="md">
-        <List>
-          <Flex gap='10'>
-            <ListItem cursor='pointer'>
-              <Link to='home' smooth={true} duration={500}>Home</Link>
-            </ListItem>
-            <ListItem cursor='pointer'>
-              <Link to='about' smooth={true} duration={500}>About</Link>
-            </ListItem>
-            <ListItem cursor='pointer'>
-              <Link to='skills' smooth={true} duration={500}>Skills</Link>
-            </ListItem>
-            <ListItem cursor='pointer'>
-              <Link to='work' smooth={true} duration={500}>Work</Link>
-            </ListItem>
-            <ListItem cursor='pointer'>
-              <Link to='contact' smooth={true} duration={500}>Contact</Link>
-            </ListItem>
-          </Flex>
-        </List>
-      </Show>
-      {/* Mobile burger */}
-      <Show below="md">
-        <DrawerComponent/>
-      </Show>
-    </HStack>
-    {/* Social icons */}
-    <Show above="lg">
-      <SocialIcons/>
-    </Show>
-    </>
-  )
-}
+      <HStack
+         h='70px'
+         w='full'
+         justifyContent='space-between'
+         backgroundColor='#0a192f'
+         color='#CBD5E0'
+         padding={3}
+         position='fixed'
+         top='0'
+         zIndex='999'
+      >
+        <Link to='home' smooth={true} duration={500}>
+          <Text padding='25px' marginLeft={4} cursor='pointer'>
+            NV
+          </Text>
+        </Link>
+        <Show above='md'>
+          <List>
+            <Flex gap='10' marginRight={8}>
+              <ListItem cursor='pointer'>
+                <Link to='home' smooth={true} duration={500}>
+                  Home
+                </Link>
+              </ListItem>
+              <ListItem cursor='pointer'>
+                <Link to='about' smooth={true} duration={500}>
+                  About
+                </Link>
+              </ListItem>
+              <ListItem cursor='pointer'>
+                <Link to='skills' smooth={true} duration={500}>
+                  Skills
+                </Link>
+              </ListItem>
+              <ListItem cursor='pointer'>
+                <Link to='work' smooth={true} duration={500}>
+                  Work
+                </Link>
+              </ListItem>
+              <ListItem cursor='pointer'>
+                <Link to='contact' smooth={true} duration={500}>
+                  Contact
+                </Link>
+              </ListItem>
+            </Flex>
+          </List>
+        </Show>
 
-export default NavBar
+        <Show below='md'>
+          <DrawerComponent />
+        </Show>
+      </HStack>
+
+      <Show above='md'>
+        <SocialIcons />
+      </Show>
+    </>
+  );
+};
+
+export default Navbar;
