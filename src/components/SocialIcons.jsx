@@ -1,121 +1,32 @@
-import { Flex, Link, Text } from "@chakra-ui/react"
+import { Flex } from "@chakra-ui/react"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
-import { HiOutlineMail } from "react-icons/hi"
 import { BsFillPersonLinesFill } from "react-icons/bs"
+import Icon from "./Icon"
 
 const SocialIcons = () => {
   return (
-    <Flex
-      direction="column"
-      position="fixed"
-      top="50%"
-      left="0"
-      transform="translateY(-50%)"
-      zIndex='1'
-    >
-      <Flex
-        w="125px"
-        h="47px"
-        justifyContent="space-around"
-        textAlign="center"
-        alignItems="center"
-        marginLeft="-80px"
-        transition='margin-left 500ms ease'
-        _hover={{
-          shadow: "md",
-          marginLeft: "0px",
-        }}
-        bg="blue.600"
-        borderRadius="3"
-      >
-        <Link
-          alignItems="center"
-          textColor="gray.300"
-          href="https://www.linkedin.com/in/villegasnahuel/"
-          isExternal
-        >
-          <Text p="2px">LinkedIn</Text>
-        </Link>
-        <FaLinkedin size={30} />
-      </Flex>
-
-      <Flex
-        w="125px"
-        h="47px"
-        justifyContent="space-around"
-        textAlign="center"
-        alignItems="center"
-        marginLeft="-80px"
-        transition='margin-left 500ms ease'
-        _hover={{
-          shadow: "md",
-          marginLeft: "0px",
-        }}
-        bg="gray.700"
-        borderRadius="3"
-      >
-        <Link
-          alignItems="center"
-          textColor="gray.300"
-          href="https://github.com/Nahu258"
-          isExternal
-        >
-          <Text p="4px">GitHub</Text>
-        </Link>
-        <FaGithub size={30} />
-      </Flex>
-
-      <Flex
-        w="125px"
-        h="47px"
-        justifyContent="space-around"
-        textAlign="center"
-        alignItems="center"
-        marginLeft="-80px"
-        transition='margin-left 500ms ease'
-        _hover={{
-          shadow: "md",
-          marginLeft: "0px",
-        }}
-        bg="gray.900"
-        borderRadius="3"
-      >
-        <Link
-          alignItems="center"
-          textColor="gray.300"
-          href="https://your-email-link.com"
-          isExternal
-        >
-          <Text p="12px">Email</Text>
-        </Link>
-        <HiOutlineMail size={30} />
-      </Flex>
-
-      <Flex
-        w="125px"
-        h="47px"
-        justifyContent="space-around"
-        textAlign="center"
-        alignItems="center"
-        marginLeft="-80px"
-        transition='margin-left 500ms ease'
-        _hover={{
-          shadow: "md",
-          marginLeft: "0px",
-        }}
-        bg="#565f69"
-        borderRadius="3px"
-      >
-        <Link
-          alignItems="center"
-          textColor="gray.300"
-          href="https://www.linkedin.com/in/kevin--villegas/"
-          isExternal
-        >
-          <Text padding="1px">Resume</Text>
-        </Link>
-        <BsFillPersonLinesFill size={25} />
-      </Flex>
+    <Flex direction="column" position="fixed" top="50%" left="0" transform="translateY(-50%)" zIndex='1'>
+      <Icon
+        padding='2px'
+        icon={<FaLinkedin size={30}/>}
+        text='LinkedIn'
+        color='#2B6CB0'
+        link='https://www.linkedin.com/in/villegasnahuel/'
+      />
+      <Icon
+        padding='4px'
+        icon={<FaGithub size={30}/>}
+        text='GitHub'
+        color='#2D3748'
+        link='https://github.com/Nahu258'
+      />
+      <Icon
+        padding='1px'
+        icon={<BsFillPersonLinesFill size={25} />}
+        text='Resume'
+        color='#565f69'
+        link='https://github.com/Nahu258'
+      />
     </Flex>
   )
 }
