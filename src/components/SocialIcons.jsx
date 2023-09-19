@@ -20,11 +20,10 @@ const SocialIcons = () => {
         textAlign="center"
         alignItems="center"
         marginLeft="-80px"
+        transition='margin-left 500ms ease'
         _hover={{
           shadow: "md",
           marginLeft: "0px",
-          transitionDuration: "0.5s",
-          transitionTimingFunction: "ease",
         }}
         bg="blue.600"
         borderRadius="3"
@@ -47,11 +46,10 @@ const SocialIcons = () => {
         textAlign="center"
         alignItems="center"
         marginLeft="-80px"
+        transition='margin-left 500ms ease'
         _hover={{
           shadow: "md",
           marginLeft: "0px",
-          transitionDuration: "0.5s",
-          transitionTimingFunction: "ease",
         }}
         bg="gray.700"
         borderRadius="3"
@@ -74,11 +72,10 @@ const SocialIcons = () => {
         textAlign="center"
         alignItems="center"
         marginLeft="-80px"
+        transition='margin-left 500ms ease'
         _hover={{
           shadow: "md",
           marginLeft: "0px",
-          transitionDuration: "0.5s",
-          transitionTimingFunction: "ease",
         }}
         bg="gray.900"
         borderRadius="3"
@@ -101,11 +98,10 @@ const SocialIcons = () => {
         textAlign="center"
         alignItems="center"
         marginLeft="-80px"
+        transition='margin-left 500ms ease'
         _hover={{
           shadow: "md",
           marginLeft: "0px",
-          transitionDuration: "0.5s",
-          transitionTimingFunction: "ease",
         }}
         bg="#565f69"
         borderRadius="3px"
