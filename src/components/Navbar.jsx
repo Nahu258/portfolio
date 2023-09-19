@@ -14,6 +14,7 @@ const Navbar = () => {
         w='full'
         justifyContent='space-between'
         // bg='#0a192f'
+        shadow='md'
         bg={grayColor ? '#1A202C' : '#0a192f'}
         transition='background-color 500ms linear'
         color='#CBD5E0'
