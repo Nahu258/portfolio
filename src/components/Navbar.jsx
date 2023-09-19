@@ -7,15 +7,15 @@ const Navbar = () => {
   return (
     <>
       <HStack
-         h='70px'
-         w='full'
-         justifyContent='space-between'
-         backgroundColor='#0a192f'
-         color='#CBD5E0'
-         padding={3}
-         position='fixed'
-         top='0'
-         zIndex='999'
+        h='70px'
+        w='full'
+        justifyContent='space-between'
+        bg='#0a192f'
+        color='#CBD5E0'
+        padding={3}
+        position='fixed'
+        top='0'
+        zIndex='999'
       >
         <Link to='home' smooth={true} duration={500}>
           <Text padding='25px' marginLeft={4} cursor='pointer'>

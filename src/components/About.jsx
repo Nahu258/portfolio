@@ -2,7 +2,7 @@ import { Box, Flex, Grid, GridItem, Text } from '@chakra-ui/react'
 
 const About = () => {
   return (
-    <Box name='about' width='full' height='calc(100vh)' paddingY={9} bg='#0a192f' color='gray.300'>
+    <Box name='about' width='full' height='calc(100vh)' paddingY={9} color='gray.300'>
       <Flex direction='column' justifyContent='center' alignItems='center' width='full' height='full'>
       <Grid maxWidth='1000px' width='full' gridTemplateColumns='1fr 1fr' gap={8}>
         <GridItem textAlign={{ sm: 'right'}} paddingBottom={8} paddingLeft={4}>

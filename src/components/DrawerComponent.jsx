@@ -23,10 +23,10 @@ const DrawerComponent = () => {
                   <Link onClick={onClose} to='about' smooth={true} duration={500}>About</Link>
                 </ListItem>
                 <ListItem py={4} fontSize='25px'>
-                  <Link onClick={onClose} to='skills' smooth={true} duration={500}>Skills</Link>
+                  <Link offset={-70} onClick={onClose} to='skills' smooth={true} duration={500}>Skills</Link>
                 </ListItem>
                 <ListItem py={4} fontSize='25px'>
-                  <Link onClick={onClose} to='work' smooth={true} duration={500}>Work</Link>
+                  <Link offset={-70} onClick={onClose} to='work' smooth={true} duration={500}>Work</Link>
                 </ListItem>
                 <ListItem py={4} fontSize='25px'>
                   <Link onClick={onClose} to='contact' smooth={true} duration={500}>Contact</Link>
