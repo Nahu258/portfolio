@@ -3,7 +3,7 @@ import CardComponent from "./CardComponent"
 
 const Work = () => {
   return (
-    <Box height={{base: 'screen', md: 'calc(100vh)'}} width='full' name='work' color='gray.300'>
+    <Box height={{base: 'screen', md: 'calc(100vh)'}} bg={{base: '#0a192f', md: 'brand.800'}} width='full' name='work' color='gray.300'>
       <Flex maxWidth='1000px' padding={4} marginX='auto' flexDirection='column' justifyContent='center' width='full' height='full'>
         <Box>
           <Text fontWeight='bold' display='inline' fontSize='4xl' borderBottom='2px' color='gray.300' borderColor='pink.600'>Work</Text>
