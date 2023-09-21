@@ -1,16 +1,16 @@
 import { Box, Flex, Grid, GridItem, Image, Text } from '@chakra-ui/react';
-import HTML from '../assets/html.png';
-import CSS from '../assets/css.png';
-import JavaScript from '../assets/javascript.png';
-import React from '../assets/react.png';
-import Node from '../assets/node.png';
-import Tailwind from '../assets/tailwind.png';
-import Mongo from '../assets/mongo.png';
-import Aws from '../assets/aws.png';
-import Next from '../assets/next.png';
-import Styled from '../assets/styled.png';
-import Vite from '../assets/vite.png';
-import Chakra from '../assets/chakra.png';
+import HTML from '../assets/images/html.png';
+import CSS from '../assets/images/css.png';
+import JavaScript from '../assets/images/javascript.png';
+import React from '../assets/images/react.png';
+import Node from '../assets/images/node.png';
+import Tailwind from '../assets/images/tailwind.png';
+import Mongo from '../assets/images/mongo.png';
+import Aws from '../assets/images/aws.png';
+import Next from '../assets/images/next.png';
+import Styled from '../assets/images/styled.png';
+import Git from '../assets/images/git.png';
+import Chakra from '../assets/images/chakra.png';
 
 const Skills = () => {
   return (
@@ -42,10 +42,6 @@ const Skills = () => {
             <p>Next.js</p>
           </GridItem>
           <GridItem _hover={{transform: 'scale(1.1)', transitionDuration: '0.5s'}} boxShadow='1px 3px #040c16'>
-            <Image marginX='auto' width={20} src={Vite}/>
-            <p>Vite.js</p>
-          </GridItem>
-          <GridItem _hover={{transform: 'scale(1.1)', transitionDuration: '0.5s'}} boxShadow='1px 3px #040c16'>
             <Image marginX='auto' width={20} src={Styled}/>
             <p>Styled-components</p>
           </GridItem>
@@ -68,6 +64,10 @@ const Skills = () => {
           <GridItem _hover={{transform: 'scale(1.1)', transitionDuration: '0.5s'}} boxShadow='1px 3px #040c16'>
             <Image marginX='auto' width={20} src={Aws}/>
             <p>AWS</p>
+          </GridItem>
+          <GridItem _hover={{transform: 'scale(1.1)', transitionDuration: '0.5s'}} boxShadow='1px 3px #040c16'>
+            <Image marginX='auto' width={20} src={Git}/>
+            <p>Git</p>
           </GridItem>
         </Grid>
       </Flex>

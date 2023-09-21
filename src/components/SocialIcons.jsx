@@ -25,7 +25,7 @@ const SocialIcons = () => {
         icon={<BsFillPersonLinesFill size={25} />}
         text='Resume'
         color='#565f69'
-        link='https://github.com/Nahu258'
+        link='CV.pdf'
       />
     </Flex>
   )
