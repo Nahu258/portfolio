@@ -4,7 +4,7 @@ import SocialIcons from './SocialIcons';
 import { Link } from 'react-scroll';
 import { useState } from 'react';
 
-const Navbar = () => {
+const NavBar = () => {
   const [brandColor, setBrandColor] = useState(false)
 
   return (
@@ -116,4 +116,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;

@@ -4,13 +4,13 @@ import Contact from "./components/Contact"
 import Home from "./components/Home"
 import Skills from "./components/Skills"
 import Work from "./components/Work"
-import Navbar from "./components/NavBar"
+import NavBar from "./components/NavBar"
 
 function App() {
 
   return (
     <Box>
-      <Navbar/>
+      <NavBar/>
       <Home/>
       <About/>
       <Skills/>
