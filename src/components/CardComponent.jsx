@@ -3,7 +3,7 @@ import gameHub from '../assets/projects/game-hub-app.png'
 
 const CardComponent = () => {
   return (
-    <Card maxW='sm'>
+    <Card maxW='sm' bg='#202020' color='gray.300'>
       <CardBody>
         <Image
           src={gameHub}
@@ -14,7 +14,7 @@ const CardComponent = () => {
           <Heading size='md'>Game Hub App</Heading>
         </Stack>
       </CardBody>
-      <Divider />
+      <Divider color='#fff'/>
       <CardFooter>
         <ButtonGroup spacing='4' marginX='auto'>
           <Button variant='solid' colorScheme='blue'>

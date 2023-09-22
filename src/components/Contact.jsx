@@ -63,7 +63,7 @@ const Contact = () => {
         {errors.message && <Text color='red.600'>{errors.message.message}</Text>}
         </FormControl>
         <Flex justifyContent='center' marginY={9}>
-          <Button color="white" role="group" _hover={{ bg: 'pink.600', borderColor: 'pink.600'}} border='2px' px={6} py={3} marginY={2} display='flex' alignItems='center' type='submit'>
+          <Button bg='whiteAlpha.200' color="white" role="group" _hover={{ bg: 'pink.600', borderColor: 'pink.600'}} border='2px' px={6} py={3} marginY={2} display='flex' alignItems='center' type='submit'>
             Send
           </Button>
         </Flex>

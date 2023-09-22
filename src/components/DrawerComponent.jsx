@@ -7,7 +7,9 @@ const DrawerComponent = () => {
 
   return (
     <Box>
-      <Button onClick={() => onOpen()}><FaBars/></Button>
+      <Button bg='#0a192f' _hover={{ cursor: 'pointer' }} onClick={() => onOpen()}>
+        <FaBars color='#fff'/>
+      </Button>
       <Drawer onClose={onClose} isOpen={isOpen} size={'xs'}>
         <DrawerOverlay />
         <DrawerContent>
