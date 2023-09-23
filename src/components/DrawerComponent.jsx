@@ -1,6 +1,7 @@
-import { FaBars } from 'react-icons/fa'
-import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerOverlay, List, ListItem, VStack, useDisclosure } from '@chakra-ui/react'
-import { Link } from 'react-scroll'
+import { FaBars, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerOverlay, HStack, Link, List, ListItem, VStack, useDisclosure } from '@chakra-ui/react'
+import { Link as Scroll } from 'react-scroll'
+import { BsFillPersonLinesFill } from 'react-icons/bs'
 
 const DrawerComponent = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -19,33 +20,40 @@ const DrawerComponent = () => {
             <List>
               <VStack p={{base: 100}}>
                 <ListItem cursor='pointer' py={4} fontSize='25px'>
-                  <Link onClick={onClose} to='home' smooth={true} duration={500} >
+                  <Scroll onClick={onClose} to='home' smooth={true} duration={500} >
                     Home
-                  </Link>
+                  </Scroll>
                 </ListItem>
                 <ListItem cursor='pointer' py={4} fontSize='25px'>
-                  <Link onClick={onClose} to='about' smooth={true} duration={500}>
+                  <Scroll onClick={onClose} to='about' smooth={true} duration={500}>
                     About
-                  </Link>
+                  </Scroll>
                 </ListItem>
                 <ListItem cursor='pointer' py={4} fontSize='25px'>
-                  <Link offset={-70} onClick={onClose} to='skills' smooth={true} duration={500}>
+                  <Scroll offset={-70} onClick={onClose} to='skills' smooth={true} duration={500}>
                     Skills
-                  </Link>
+                  </Scroll>
                 </ListItem>
                 <ListItem cursor='pointer' py={4} fontSize='25px'>
-                  <Link offset={-70} onClick={onClose} to='work' smooth={true} duration={500}>
+                  <Scroll offset={-70} onClick={onClose} to='work' smooth={true} duration={500}>
                     Work
-                  </Link>
+                  </Scroll>
                 </ListItem>
                 <ListItem cursor='pointer' py={4} fontSize='25px'>
-                  <Link onClick={onClose} to='contact' smooth={true} duration={500}>
+                  <Scroll onClick={onClose} to='contact' smooth={true} duration={500}>
                     Contact
-                  </Link>
+                  </Scroll>
                 </ListItem>
               </VStack>
             </List>
           </DrawerBody>
+          <DrawerFooter>
+            <HStack w='full' justifyContent='space-around'>
+              <Link isExternal href='https://www.linkedin.com/in/villegasnahuel/'><FaLinkedin color="#fff" size={30}/></Link>
+              <Link isExternal href='https://github.com/Nahu258'><FaGithub color="#fff" size={30}/></Link>
+              <Link isExternal href='CV.pdf'><BsFillPersonLinesFill color="#fff" size={30} /></Link>
+            </HStack>
+          </DrawerFooter>
         </DrawerContent>
       </Drawer>
     </Box>
