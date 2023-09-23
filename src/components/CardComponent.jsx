@@ -20,7 +20,7 @@ const CardComponent = () => {
           <Button _hover={{textDecoration: 'none'}} bg='#b3317d' color='#fff'>
             <Link href='https://game-hub-five-tau.vercel.app/' isExternal>Demo</Link>
           </Button>
-          <Button _hover={{textDecoration: 'none'}} variant="ghost" bg='whiteAlpha.100' color='#fff'>
+          <Button _hover={{textDecoration: 'none'}} bg='whiteAlpha.100' color='#fff'>
             <Link href='https://github.com/Nahu258/game-hub' isExternal>Code</Link>
           </Button>
         </ButtonGroup>
