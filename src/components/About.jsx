@@ -20,10 +20,10 @@ const About = () => {
         gap={8}
         paddingX={4}>
         <GridItem textAlign={{ sm: 'right'}} fontSize='2xl' fontWeight='bold'>
-          <Text>Nice to meet you, take a look at my portfolio and see the projects i have been working on</Text>
+          <Text>Nice to meet you! Please take a look at my portfolio to see the projects I have been working on.</Text>
         </GridItem>
         <Box>
-          <Text>Hi I&apos;m a passionate Full Stack developer who enjoy the process to make modern web aplications, always trying to learn something new and trying to improve my habilities as a web developer, feel free to look around and if you want leave a feedback about this portfolio.</Text>
+          <Text>I&apos;m a 24-year-old developer from Argentina. I&apos;ve been passionate about programming since I was very young. At the age of 13, I started learning programming using a language called Lua. My first project was a small server for a video game that I created with my best friend. Since then, I have never stopped learning new things.</Text>
         </Box>
       </Grid>
       </Flex>

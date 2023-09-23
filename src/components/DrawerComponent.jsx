@@ -13,7 +13,7 @@ const DrawerComponent = () => {
       </Button>
       <Drawer onClose={onClose} isOpen={isOpen} size={'xs'}>
         <DrawerOverlay />
-        <DrawerContent>
+        <DrawerContent bg='#202020'>
           <DrawerCloseButton />
           {/* <DrawerHeader>{`${size} drawer contents`}</DrawerHeader> */}
           <DrawerBody>
