@@ -17,10 +17,10 @@ const CardComponent = () => {
       <Divider color='#fff'/>
       <CardFooter>
         <ButtonGroup spacing='4' marginX='auto'>
-          <Button variant='solid' colorScheme='blue'>
+          <Button variant='solid' bg='#b3317d'>
             <Link href='https://game-hub-five-tau.vercel.app/' isExternal>Demo</Link>
           </Button>
-          <Button variant='ghost' colorScheme='blue'>
+          <Button variant='ghost' colorScheme='pink'>
             <Link href='https://github.com/Nahu258/game-hub' isExternal>Code</Link>
           </Button>
         </ButtonGroup>
