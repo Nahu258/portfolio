@@ -33,7 +33,7 @@ const milestones = [
     date: 'October, 2023 - December, 2023',
     title: 'No Country',
     description:
-      'Worked as a Frontend developer in a team, using React with Next.js and Tailwind CSS'
+      'Worked as a Frontend developer in a team, using React with Next.js and Tailwind CSS.'
   }
 ]
 
