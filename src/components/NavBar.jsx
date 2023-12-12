@@ -1,8 +1,8 @@
-import { HStack, ListItem, List, Text, Show, Flex } from '@chakra-ui/react';
-import DrawerComponent from './DrawerComponent';
-import SocialIcons from './SocialIcons';
-import { Link } from 'react-scroll';
-import { useState } from 'react';
+import { Flex, HStack, List, ListItem, Show, Text } from '@chakra-ui/react'
+import { useState } from 'react'
+import { Link } from 'react-scroll'
+import DrawerComponent from './DrawerComponent'
+import SocialIcons from './SocialIcons'
 
 const NavBar = () => {
   const [brandColor, setBrandColor] = useState(false)
@@ -33,69 +33,69 @@ const NavBar = () => {
             <Flex gap='10' marginRight={8}>
               <ListItem cursor='pointer'>
                 <Link activeStyle={{
-                  fontWeight:'bold', borderBottom: '2px solid #b3317d' 
+                  fontWeight: 'bold', borderBottom: '2px solid #b3317d'
                 }}
-                onSetActive={() => setBrandColor(false)} 
-                spy={true}
-                to='home'
-                smooth={true}
-                duration={500}
+                  onSetActive={() => setBrandColor(false)}
+                  spy={true}
+                  to='home'
+                  smooth={true}
+                  duration={500}
                 >
                   Home
                 </Link>
               </ListItem>
               <ListItem cursor='pointer'>
                 <Link activeStyle={{
-                  fontWeight:'bold',
+                  fontWeight: 'bold',
                   borderBottom: '2px solid #b3317d'
                 }}
-                onSetActive={() => setBrandColor(true)} 
-                spy={true}
-                to='about'
-                smooth={true}
-                duration={500}
+                  onSetActive={() => setBrandColor(true)}
+                  spy={true}
+                  to='experience'
+                  smooth={true}
+                  duration={500}
                 >
-                  About
+                  Experience
                 </Link>
               </ListItem>
               <ListItem cursor='pointer'>
                 <Link activeStyle={{
-                  fontWeight:'bold',
+                  fontWeight: 'bold',
                   borderBottom: '2px solid #b3317d'
                 }}
-                onSetActive={() => setBrandColor(false)} 
-                spy={true}
-                to='skills'
-                smooth={true}
-                duration={500}
+                  onSetActive={() => setBrandColor(false)}
+                  spy={true}
+                  to='skills'
+                  smooth={true}
+                  duration={500}
                 >
                   Skills
                 </Link>
               </ListItem>
               <ListItem cursor='pointer'>
                 <Link activeStyle={{
-                  fontWeight:'bold',
+                  fontWeight: 'bold',
                   borderBottom: '2px solid #b3317d'
                 }}
-                onSetActive={() => setBrandColor(true)} 
-                spy={true}
-                to='work'
-                smooth={true}
-                duration={500}
+                  onSetActive={() => setBrandColor(true)}
+                  spy={true}
+                  to='projects'
+                  smooth={true}
+                  duration={500}
                 >
-                  Work
+                  Projects
                 </Link>
               </ListItem>
               <ListItem cursor='pointer'>
                 <Link activeStyle={{
-                  fontWeight:'bold',
+                  fontWeight: 'bold',
                   borderBottom: '2px solid #b3317d'
                 }}
-                onSetActive={() => setBrandColor(false)} 
-                spy={true}
-                to='contact'
-                smooth={true}
-                duration={500}
+                  onSetActive={() => setBrandColor(false)}
+                  spy={true}
+                  to='contact'
+                  smooth={true}
+                  duration={500}
                 >
                   Contact
                 </Link>
@@ -113,7 +113,7 @@ const NavBar = () => {
         <SocialIcons />
       </Show>
     </>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar
