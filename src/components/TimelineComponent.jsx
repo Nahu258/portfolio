@@ -80,16 +80,8 @@ const Milestones = () => {
   )
 }
 
-// interface CardProps {
-//   id: number;
-//   title: string;
-//   description: string;
-//   date: string;
-// }
-
 const Card = (props) => {
-  // For even id show card on left side
-  // For odd id show card on right side
+  //TODO: prop-types
   const { id, title, description, date } = props
   const isEvenId = id % 2 == 0
   let borderWidthValue = isEvenId ? '15px 15px 15px 0' : '15px 0 15px 15px'
