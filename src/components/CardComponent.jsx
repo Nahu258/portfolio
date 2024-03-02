@@ -1,7 +1,7 @@
 import { Button, ButtonGroup, Card, CardBody, CardFooter, Divider, Heading, Image, Link, Stack } from "@chakra-ui/react"
 import PropTypes from "prop-types"
 
-const CardComponent = ({image, demoLink, repoLink, title}) => {
+const CardComponent = ({ image, demoLink, repoLink, title }) => {
   return (
     <Card maxW='sm' bg='#202020' color='gray.300'>
       <CardBody>
@@ -14,13 +14,15 @@ const CardComponent = ({image, demoLink, repoLink, title}) => {
           <Heading size='md'>{title}</Heading>
         </Stack>
       </CardBody>
-      <Divider color='#fff'/>
+      <Divider color='#fff' />
       <CardFooter>
         <ButtonGroup spacing='4' marginX='auto'>
-          <Button _hover={{textDecoration: 'none'}} bg='#b3317d' color='#fff'>
-            <Link href={demoLink} onClick={(event) => demoLink === '' && event.preventDefault()} isExternal>Demo</Link>
-          </Button>
-          <Button _hover={{textDecoration: 'none'}} bg='whiteAlpha.100' color='#fff'>
+          {demoLink !== '' &&
+            <Button _hover={{ textDecoration: 'none' }} bg='#b3317d' color='#fff'>
+              <Link href={demoLink} onClick={(event) => demoLink === '' && event.preventDefault()} isExternal>Demo</Link>
+            </Button>
+          }
+          <Button _hover={{ textDecoration: 'none' }} bg='whiteAlpha.100' color='#fff'>
             <Link href={repoLink} isExternal>Code</Link>
           </Button>
         </ButtonGroup>
